@@ -1,3 +1,9 @@
+"""
+	When you cannot make a decision or more people in your office cannot choose which radio to listen to together
+	A little script for randomly selecting radio stations to listen to could be helpful.
+	Selected radio station you can listen to, for example, radiofm-online.com
+"""
+
 import random
 import pathlib
 from tkinter import *
@@ -20,7 +26,7 @@ class Application(Frame):
 		self.create_widgets()
 		
 	def create_widgets(self):
-		# utwórz przycisk do losowania
+		# create button for the draw
 		self.btn_random['text'] = "LOSOWANIE"
 		self.btn_random['image'] = None
 		self.btn_random['height'] = "160"
@@ -37,11 +43,8 @@ class Application(Frame):
 		
 		global image
 		image = PhotoImage(file=station)
-		self.btn_random['text'] = None
+		# self.btn_random['text'] = None
 		self.btn_random['image'] = image
-
-
-
 
 
 root = Tk()
