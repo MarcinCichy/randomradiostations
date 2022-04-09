@@ -32,7 +32,7 @@ class Application(Frame):
 		self.btn_random['height'] = "160"
 		self.btn_random['width'] = "160"
 		self.btn_random['command'] = self.update_clicks
-		self.btn_random.pack(fill='both')
+		self.btn_random.pack(anchor=CENTER)
 
 	def update_clicks(self):
 		self.btn_random_clicks += 1
@@ -42,7 +42,7 @@ class Application(Frame):
 	def change_img(self):
 		self.choose_radio()
 		if self.btn_random_clicks % 2 != 0:
-			self.after(100, self.change_img)
+			self.after(80, self.change_img)
 
 	def choose_radio(self):
 		for picture in path.glob("*.png"):
@@ -56,8 +56,8 @@ class Application(Frame):
 
 root = Tk()
 app = Application(root)
-root.title('Choose A Random Radio Station')
-root.geometry('160x160')
+root.title('Random Radio Station')
+root.geometry('170x170')
 root.iconbitmap(pathlib.Path.cwd() / "radio.ico")
 root.minsize(170, 170)
 root.maxsize(170, 170)
