@@ -8,7 +8,6 @@ import random
 import pathlib
 from tkinter import *
 from tkinter import messagebox
-import time
 
 path = pathlib.Path.cwd() / "img_radio_stations"
 radios_list = []
@@ -37,16 +36,13 @@ class Application(Frame):
 
 	def update_clicks(self):
 		self.btn_random_clicks += 1
-		print(self.btn_random_clicks)
+		# print(self.btn_random_clicks)  # to check myself
 		self.change_img()
 
 	def change_img(self):
 		self.choose_radio()
 		if self.btn_random_clicks % 2 != 0:
 			self.after(100, self.change_img)
-		elif self.btn_random_clicks % 2 == 0:
-			self.after_cancel(self.btn_random)
-			self.btn_random['image'] = image
 
 	def choose_radio(self):
 		for picture in path.glob("*.png"):
@@ -61,7 +57,8 @@ class Application(Frame):
 root = Tk()
 app = Application(root)
 root.title('Choose A Random Radio Station')
-root.geometry('180x180')
-root.minsize(180, 180)
-root.maxsize(180, 180)
+root.geometry('160x160')
+root.iconbitmap(pathlib.Path.cwd() / "radio.ico")
+root.minsize(170, 170)
+root.maxsize(170, 170)
 root.mainloop()
