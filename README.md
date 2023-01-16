@@ -4,3 +4,5 @@ When you cannot make a decision or more people in your office cannot choose whic
 
 
 Click once on the picture to start the draw, click again to end the draw.
+
+Radio station logos are the property of their respective owners
