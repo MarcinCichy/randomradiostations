@@ -1,8 +1,13 @@
-When you cannot make a decision or more people in your office cannot choose which radio to listen to together
-	A little script for randomly selecting radio stations to listen to could be helpful.
-	Selected radio station you can listen to, for example, radiofm-online.com
+# RANDOM RADIO STATION SELECTOR
 
+### Screenshot:
+![Main application interface](Screenshots/main.png "Main interface") 
 
-Click once on the picture to start the draw, click again to end the draw.
+When you and your colleagues can't decide which radio station to listen to together, this little script for randomly selecting radio stations might be just what you need.  
+Once a station is selected, you can listen to it, for example, on [radiofm-online.com](https://radiofm-online.com).
 
-Radio station logos are the property of their respective owners
+**How to use:**
+- Click once on the picture to start the selection.
+- Click again on the picture to stop the selection.
+
+Radio station logos are the property of their respective owners.
