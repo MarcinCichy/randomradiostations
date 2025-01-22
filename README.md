@@ -11,3 +11,7 @@ Once a station is selected, you can listen to it, for example, on [radiofm-onlin
 - Click again on the picture to stop the selection.
 
 Radio station logos are the property of their respective owners.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
